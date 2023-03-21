@@ -1,6 +1,6 @@
-# ** Pands Project - Fisher Iris dataset **
+### Pands Project - Fisher Iris dataset ###
 
-# ** Introduction**
+## Introduction ##
 
 The Iris flower data set is a well known data set used to demonstrate various statistical models or algorithims. This data set is the core focus of presenting my learning in the Programming and Scripting module of the Higher Diploma in Data Anslytics from the ATU - the ATlantic Technologcal UNiversity
 
@@ -19,4 +19,7 @@ The data set has 50 samples of each of the three species. The four features of t
 Refernces for the above information include:
 
 [History of the Fisher Anderson Iris data set](https://kaggle.com/datasets/arshid/iris-flower-dataset)
+
 [Another resources](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
+
+## Uses of the Iris Fisher dataset ##
