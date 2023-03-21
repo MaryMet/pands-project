@@ -22,4 +22,6 @@ Refernces for the above information include:
 
 [Another resources](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
 
+---
+
 ## Uses of the Iris Fisher dataset ##
