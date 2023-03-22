@@ -1,3 +1,3 @@
-# pands project
-#iris fisher data set
-# author : MAry Metcalfe
+# Pands Project
+# Iris Fisher data set
+# Author : MAry Metcalfe
