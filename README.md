@@ -38,3 +38,11 @@ Refernces for the above information include:
 ## Uses of the Iris Fisher dataset ##
 
 The Iris dataset is widely used in pattern recognition learning. One varient of the Iris flower is linearly separable from the other 2 varients. Those two varients are not linerly separable from each other.
+
+Thw data set is used in data exploration, machine learning and data visualisaetion. it is well understood dataset that can be used to demonstarte many concerpts of data science. Many resources can be fouond online and is thus ideal for beginners of data science.
+
+Data Exploration - The analysis of the data set can be used to identify patterns and relationships in the data.
+Machine Learning - Algorithims can be developed to classify the different Iris species based on charcteristics in the data set.
+Data Visualisation - The data set can be visualised using histograms, scatter graphs and box plots.
+
+[LevelUpGitConnected](https://levelup.gitconnected.com/unveiling-the-mysteries-of-the-iris-dataset-a-comprehensive-analysis-and-machine-learning-f5c4f9dbcd6d)
