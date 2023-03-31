@@ -15,7 +15,7 @@ The data he used in the paper was collected by botanist Edgar Anderson in the Ga
 
 The data Me Anderson collected quantifies the morphologic variations of 3 species of Iris flowers : the Iris Versicolor, Iris Setosa and the Iris Virginica.
 
-![Iris Versicolour, Iris Setosa and the Irish Virginica](https://www.google.com/imgres?imgurl=https%3A%2F%2Fs3.amazonaws.com%2Fassets.datacamp.com%2Fblog_assets%2FMachine%2BLearning%2BR%2Firis-machinelearning.png&tbnid=P-PGjABuYKeYpM&vet=12ahUKEwjGwrvMpOz9AhVEFMAKHa9qCdgQMygAegUIARCUAQ..i&imgrefurl=http%3A%2F%2Fwww.lac.inpe.br%2F~rafael.santos%2FDocs%2FCAP394%2FWholeStory-Iris.html&docid=DWcNzEt0Tz4F4M&w=1275&h=477&q=3%20species%20of%20irish%20flowers%20in%20the%20data%20set&ved=2ahUKEwjGwrvMpOz9AhVEFMAKHa9qCdgQMygAegUIARCUAQ)
+[Iris Versicolour, Iris Setosa and the Irish Virginica](https://www.google.com/imgres?imgurl=https%3A%2F%2Fs3.amazonaws.com%2Fassets.datacamp.com%2Fblog_assets%2FMachine%2BLearning%2BR%2Firis-machinelearning.png&tbnid=P-PGjABuYKeYpM&vet=12ahUKEwjGwrvMpOz9AhVEFMAKHa9qCdgQMygAegUIARCUAQ..i&imgrefurl=http%3A%2F%2Fwww.lac.inpe.br%2F~rafael.santos%2FDocs%2FCAP394%2FWholeStory-Iris.html&docid=DWcNzEt0Tz4F4M&w=1275&h=477&q=3%20species%20of%20irish%20flowers%20in%20the%20data%20set&ved=2ahUKEwjGwrvMpOz9AhVEFMAKHa9qCdgQMygAegUIARCUAQ)
 
 The data set has 50 samples of each of the three species. So 150 samples total. The four features of the flowers that were measured were the petal length, the petal width, the spepal length and the spepal width. 
 
