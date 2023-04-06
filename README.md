@@ -46,3 +46,34 @@ Machine Learning - Algorithims can be developed to classify the different Iris s
 Data Visualisation - The data set can be visualised using histograms, scatter graphs and box plots.
 
 [LevelUpGitConnected](https://levelup.gitconnected.com/unveiling-the-mysteries-of-the-iris-dataset-a-comprehensive-analysis-and-machine-learning-f5c4f9dbcd6d)
+
+## Technology Used ##
+
+# Matplotlib #
+
+Matplotlib is a tool for use in python programming. It is a library used to create visualisations of data in python.
+Matplotlib makes easy things easy and hard things possible - Quote from [matplotlib](https://matplotlib.org/)
+Types of plots that can be created with matplotlib include: plot graphs, scatter plots and histograms.
+
+# Seaborn #
+
+Seaborn is based on Matplotlib, seaborn is a library of tools wihich can be used to visualise data through python.
+Seaborn provides a high-level interface for drawing attractive and informative statistical graphics. [seaborn](https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,attractive%20and%20informative%20statistical%20graphics.)
+
+# Pandas #
+
+Pandas is an open source Python library that is most widely used for data science/data analysis and machine learning tasks. It is related to and builds upon another Python package called numpy. 
+Pandas is used for working with data sets.
+It has functions for analyzing, cleaning, exploring, and manipulating data.
+The name "Pandas" has a reference to both "Panel Data", and "Python Data Analysis" and was created by Wes McKinney in 2008. 
+[w3schools](https://www.w3schools.com/python/pandas/pandas_intro.asp#:~:text=What%20is%20Pandas%3F,by%20Wes%20McKinney%20in%202008.)
+
+# NumPy #
+
+NumPy is a Python library. It is used for working with arrays. It works with linear algebra and matrices
+NumPy is short for "Numerical Python". It was created in 2005 by Travis Oliphant. It is an open source project.
+[w3schools](https://www.w3schools.com/python/numpy/default.asp)
+
+## Analysis ##
+
+Sepal length histogram - recieved assistance from website [geeksforgeeks](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)

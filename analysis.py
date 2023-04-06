@@ -40,7 +40,15 @@ plt.title ("sepal vs petal", color = "green")  # title of the scattergraph
 
 # basic boxplot to visualise one or more groups of numerical data. It compares the distributions of the Sepal Length, Sepal Width, Petal Length and Petal Width
 
+plt.show()
 
+# histogram to show sepal length
 
+plt.figure(figsize = (10,7))
+x = iris['sepallength']
 
+plt.hist(x, bins =20, color = "blue")
+plt.title(" Sepal Length in cm", color = "blue")
+plt.xlabel("Sepal Length" , color = "blue")
+plt.ylabel("Count", color = "blue")
 plt.show()
