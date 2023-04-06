@@ -52,3 +52,9 @@ plt.title(" Sepal Length in cm", color = "blue")
 plt.xlabel("Sepal Length" , color = "blue")
 plt.ylabel("Count", color = "blue")
 plt.show()
+
+# box plot - displays how the data is distributed and any outliers
+
+plt.figure(figsize = (10, 7))
+iris.boxplot()
+plt.show()

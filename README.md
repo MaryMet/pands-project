@@ -49,18 +49,18 @@ Data Visualisation - The data set can be visualised using histograms, scatter gr
 
 ## Technology Used ##
 
-# Matplotlib #
+### Matplotlib ###
 
 Matplotlib is a tool for use in python programming. It is a library used to create visualisations of data in python.
 Matplotlib makes easy things easy and hard things possible - Quote from [matplotlib](https://matplotlib.org/)
 Types of plots that can be created with matplotlib include: plot graphs, scatter plots and histograms.
 
-# Seaborn #
+### Seaborn ###
 
 Seaborn is based on Matplotlib, seaborn is a library of tools wihich can be used to visualise data through python.
 Seaborn provides a high-level interface for drawing attractive and informative statistical graphics. [seaborn](https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,attractive%20and%20informative%20statistical%20graphics.)
 
-# Pandas #
+### Pandas ###
 
 Pandas is an open source Python library that is most widely used for data science/data analysis and machine learning tasks. It is related to and builds upon another Python package called numpy. 
 Pandas is used for working with data sets.
@@ -68,12 +68,31 @@ It has functions for analyzing, cleaning, exploring, and manipulating data.
 The name "Pandas" has a reference to both "Panel Data", and "Python Data Analysis" and was created by Wes McKinney in 2008. 
 [w3schools](https://www.w3schools.com/python/pandas/pandas_intro.asp#:~:text=What%20is%20Pandas%3F,by%20Wes%20McKinney%20in%202008.)
 
-# NumPy #
+### NumPy ###
 
 NumPy is a Python library. It is used for working with arrays. It works with linear algebra and matrices
 NumPy is short for "Numerical Python". It was created in 2005 by Travis Oliphant. It is an open source project.
 [w3schools](https://www.w3schools.com/python/numpy/default.asp)
 
+-----
+
 ## Analysis ##
+
+Initially I completed a basic exploration of the the iris dataset to analyse the data. 
+I then created a number of different types of graphs/plots to visualise the data set - this could help identify patterns in the data.
+
+The first step for me was to import the iris data set. I imported this into git hub from [UCI Machine Learning repository](https://archive.ics.uci.edu/ml/datasets/iris). 
+I then used the command git pull to have it in my Visual Basic pands -project folder. This was then available to use in my analysis.
+
+I imported the folowing librarys for use in my analyis - numpy, matplotlib, seaborn and panda. See above for brief descriptions of these libraries.
+
+I made liberal use of comments to explain my analysis of the data.
+
+The shape prompt showed that the dataset I downloaded has 5 columns and 150 rows.
+The columns prompts showed the titles of each column 
+THe class prompt named the flower variety/class and the number of data points collected for each class - i.e 50
+The head prompt prints out the first ten rows of the dataset.
+The unique prompts is a different method of naming the variet/class and the data points collected for each.
+
 
 Sepal length histogram - recieved assistance from website [geeksforgeeks](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)
