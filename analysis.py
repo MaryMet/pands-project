@@ -40,8 +40,24 @@ plt.title ("sepal vs petal", color = "green")  # title of the scattergraph
 
 # basic boxplot to visualise one or more groups of numerical data. It compares the distributions of the Sepal Length, Sepal Width, Petal Length and Petal Width
 
-plt.show()
+plt.show
 
+# another scatter plot - speal length and sepal width
+
+iris.plot(kind="scatter", x = "sepallength", y =  "sepalwidth")
+plt.show()
+# no discrimination between species. Visualisation is not clear.
+
+
+# using seaborn to distinguish the graph by species -sns
+sns.set_style("whitegrid")
+sns.FacetGrid(iris, hue="class", height=4) \
+    .map(plt.scatter, "sepallength", "sepalwidth") \
+    .add_legend()
+plt.show()
+# the species are distingushed by colour and the differences easily seen by using seaborn and compared to the scatter graph above.
+# blue, class setosa, is separated from the other two - versicolour -orange and virginica. This can be used to identify/clasify setosa easily but not the other two.
+        
 # histogram to show sepal length
 
 plt.figure(figsize = (10,7))
