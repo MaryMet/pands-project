@@ -100,7 +100,14 @@ My initial scatterplot - all points were blue in colour. There was no distinguis
 using the seaborn library I was able to give each specied a specific colour or hue. 
 My first graph using seaborn had sepalwidth on y axis and sepallength on y axis. i also added a legend - class setosa is blue, veriscolor is orange and virginica is green. On this graph the blue points (setosa) was clustered together and orange (versicolour) and green (virginica) were mixed up. This clearly shows that setosa is easily identifying . Veriscolour and virginica are indistinguishable from each other when those two dimensions are being compared. ( There was one blue spot separated form the cluster)
 
-I than plotted more scattergraphs, (using pairplot), using different dimensions on the axes and comapring all to see if I could get a graph where versicolour and virginica are are more distingusihable from each other. The legend was the same as above. On all graphs setosa was clustered together - easily identifiable/classified. I found graphs that had petal width on the x axis and other dimesions on the y - show the other two grouping together between but there was still overlap.
+I than plotted more scattergraphs, (using pairplot), using different dimensions on the axes and comapring all to see if I could get a graph where versicolour and virginica are are more distingusihable from each other. This produced a matrix of scattergraphs and line graphs. The legend was the same as above. On all graphs setosa was clustered together - easily identifiable/classified. I found the graph that had petal width on the x axis and petal length on the y showed the separation of the classes and there was only a small amount of overlap. Setosa was completely separated. So if I picked an iris flower and measured the petal width and pletal width I would have nearly 100 confidence that if I identified it as a setosa based on this graph - i would be correct. I would be more confident with the other two but there is still a level of unsurity.
+The line graph clearly shows the overlap and length of dimensions where there would be an unsurity. Measurements above and below this area of overlap would be clear as to the class of the flower.
+
+I found resources on youtube very helpful with my analysis above. An example of this is [Iris Dataset EDA leactur 1 and 2](https://youtu.be/FLuqwQgSBDw)
+
+
+
+
 
 Sepal length histogram - recieved assistance from website [geeksforgeeks](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)
 
