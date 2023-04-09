@@ -94,5 +94,13 @@ THe class prompt named the flower variety/class and the number of data points co
 The head prompt prints out the first ten rows of the dataset.
 The unique prompts is a different method of naming the variet/class and the data points collected for each.
 
+I created a number of scatterplots from the basic to  more complex. I used different libararies (matplotlib and seaborn) to give resources for my graphs.
+I used different dimensions on each axis, (dimensions being sepallenth, sepal width, petal length, petal width), in the hope that I can use them to clearly distinguish between the species.
+My initial scatterplot - all points were blue in colour. There was no distinguishing between the species.
+using the seaborn library I was able to give each specied a specific colour or hue. 
+My first graph using seaborn had sepalwidth on y axis and sepallength on y axis. i also added a legend - class setosa is blue, veriscolor is orange and virginica is green. On this graph the blue points (setosa) was clustered together and orange (versicolour) and green (virginica) were mixed up. This clearly shows that setosa is easily identifying . Veriscolour and virginica are indistinguishable from each other when those two dimensions are being compared. ( There was one blue spot separated form the cluster)
+
+I than plotted more scattergraphs, (using pairplot), using different dimensions on the axes and comapring all to see if I could get a graph where versicolour and virginica are are more distingusihable from each other. The legend was the same as above. On all graphs setosa was clustered together - easily identifiable/classified. I found graphs that had petal width on the x axis and other dimesions on the y - show the other two grouping together between but there was still overlap.
 
 Sepal length histogram - recieved assistance from website [geeksforgeeks](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)
+

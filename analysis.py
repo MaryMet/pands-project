@@ -37,12 +37,9 @@ print (summary.head ())
 iris.plot(kind = "scatter", x = "sepallength", y = "petallength", color = "red") # visualising some of the data in a scattergraph
 
 plt.title ("sepal vs petal", color = "green")  # title of the scattergraph
-
-# basic boxplot to visualise one or more groups of numerical data. It compares the distributions of the Sepal Length, Sepal Width, Petal Length and Petal Width
-
 plt.show
 
-# another scatter plot - speal length and sepal width
+# another scatter plot - sepal length and sepal width
 
 iris.plot(kind="scatter", x = "sepallength", y =  "sepalwidth")
 plt.show()
@@ -57,7 +54,17 @@ sns.FacetGrid(iris, hue="class", height=4) \
 plt.show()
 # the species are distingushed by colour and the differences easily seen by using seaborn and compared to the scatter graph above.
 # blue, class setosa, is separated from the other two - versicolour -orange and virginica. This can be used to identify/clasify setosa easily but not the other two.
-        
+# one setosa could be misclassified because of where it is situated on this graph.
+
+# below will print out a number of graphs that will dispalay comparisons between the differnt measurements/dimensions measured- sepallength, petallenth, speal width, petal width
+# one of these may give the best dimension comparison to completely separate the species thus leading to better tools for identification
+
+plt.close()
+sns.set_style("whitegrid")
+sns.pairplot(iris, hue="class", height=3, diag_kind="kde")
+plt.show()
+# petal width on the x ais and the other dimensions on the y axis seem to give best grouping/separtion thus being a tool for identification.
+
 # histogram to show sepal length
 
 plt.figure(figsize = (10,7))
@@ -70,6 +77,7 @@ plt.ylabel("Count", color = "blue")
 plt.show()
 
 # box plot - displays how the data is distributed and any outliers
+# basic boxplot to visualise one or more groups of numerical data. It compares the distributions of the Sepal Length, Sepal Width, Petal Length and Petal Width
 
 plt.figure(figsize = (10, 7))
 iris.boxplot()
