@@ -91,11 +91,15 @@ I made liberal use of comments to explain my analysis of the data.
 The shape prompt showed that the dataset I downloaded has 5 columns and 150 rows.
 The columns prompts showed the titles of each column 
 THe class prompt named the flower variety/class and the number of data points collected for each class - i.e 50
-The head prompt prints out the first ten rows of the dataset.
+The head prompt prints out the first ten rows of the dataset. The first ten lines are data points collected from the Setosa class. This is how the data was compiled/listed.
+The tail prints out the last ten lines of the data set. This data belongs to class virginica - because of how the data was compliled/listed.
 The unique prompts is a different method of naming the variet/class and the data points collected for each.
+
+### Scattergraphs ###
 
 I created a number of scatterplots from the basic to  more complex. I used different libararies (matplotlib and seaborn) to give resources for my graphs.
 I used different dimensions on each axis, (dimensions being sepallenth, sepal width, petal length, petal width), in the hope that I can use them to clearly distinguish between the species.
+
 My initial scatterplot - all points were blue in colour. There was no distinguishing between the species.
 using the seaborn library I was able to give each specied a specific colour or hue. 
 My first graph using seaborn had sepalwidth on y axis and sepallength on y axis. i also added a legend - class setosa is blue, veriscolor is orange and virginica is green. On this graph the blue points (setosa) was clustered together and orange (versicolour) and green (virginica) were mixed up. This clearly shows that setosa is easily identifying . Veriscolour and virginica are indistinguishable from each other when those two dimensions are being compared. ( There was one blue spot separated form the cluster)
@@ -105,9 +109,17 @@ The line graph clearly shows the overlap and length of dimensions where there wo
 
 I found resources on youtube very helpful with my analysis above. An example of this is [Iris Dataset EDA leactur 1 and 2](https://youtu.be/FLuqwQgSBDw)
 
-
-
-
+### Histogram ###
 
 Sepal length histogram - recieved assistance from website [geeksforgeeks](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)
+
+### Boxplots ###
+
+A boxplot is another type of graph that is used to visualise data. the shape of the boxplot shows how the data is distributed and it shows any outliers. It shows a 5 number summary - the minimum, first quartile, median, third quartile and maximum. The line in the middle is the median.
+
+My initial boxplot was a very simple reprentation of all of the data types collected - sepallenth, sepalwidth, petallength and petalwidth. Shows the minimum data sample in each category, the median and the maximum. THe boxes show the lower and upper quartiles of the data in each category. The data isn't does not discriminate between the Iris species/classes. I than decided to create four tables of each category/attribute which also represents the classes. The output of this code is illustrative of the data set and the differences between each class/species. This graphs shows the clear differences between sertosa and the other two classess in almost all attributes. Setetosa is clearly searately and easily identifyable while the other two cannot be easily distinguished except at the outer ranges of the data - minimum and maximum measurements. The onle oddity is the seratosa has the largest variation in sepalwidth.
+
+### Piechart ###
+
+I decided to do a simple pie chart representation of the data - just to have practice with this aspect of data visualisation
 

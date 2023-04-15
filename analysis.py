@@ -10,12 +10,14 @@ import numpy as np
 iris =pd.read_csv("iris_csv.csv") # this uses the imported iris_cv dataset
 
 print (iris.shape) # this prints out the number of data points and the number of columns across
+iris.describe()
 
 print (iris.columns) # this prints out the titles of the columns
 
 print (iris["class"].value_counts()) # this prints out the class/species of the flowers and the number of data counts for each - 50. This is an example of a balanced dataset
 
-print (iris.head(10)) # print out the first ten rows of the dataset
+print (iris.head(10)) # print out the first ten rows of the dataset - contains data about sertosa - just how the data was compiled
+print (iris.tail(10)) # print out the last ten rows of the dataset - contains data about virginica - just how the data was compiled
 
 iris['class'].unique() # find out unique classification 
 print(iris.groupby('class').size()) # print out above the uniques classification of the iris flowers and the amount of each.
@@ -79,6 +81,22 @@ plt.show()
 # box plot - displays how the data is distributed and any outliers
 # basic boxplot to visualise one or more groups of numerical data. It compares the distributions of the Sepal Length, Sepal Width, Petal Length and Petal Width
 
-plt.figure(figsize = (10, 7))
-iris.boxplot()
+plt.figure(figsize = (10, 7)) # basic boxplot which compares the differnet attributes in the dataset
+iris.boxplot() # there is no clear distinction between species
+plt.show()
+
+#More boxplots to visualise the data - 4 box blots according to different data sets to visualise differences between species
+
+sns.set(style="darkgrid", palette="deep")  # identifying a style and theme to easily differentiate between the different species/classes
+f, axes = plt.subplots(2, 2, sharey=False, figsize=(10, 10)) # 4 boxplots - 2 on top and 2 at bottom
+sns.boxplot(x="class", y="petallength",data=iris, ax = axes[0,0], hue="class") # using seaborn to draw the boxplots. x is the class/species and the y axis contains data from petallength. Hue = legend
+sns.boxplot(x="class", y="sepallength", data=iris, ax= axes[0,1]) # uses seaborn. x axis has the class/sepies, y axis the sepal length
+sns.boxplot(x="class", y="petalwidth" ,data=iris, ax= axes[1,0]) # uses seaborn. x axis is the class/species, y axis is petal width
+sns.boxplot(x="class", y="sepalwidth", data=iris, ax= axes[1,1]) # uses seaborn. x axis is the class/species. y axis is the sepal width
+f.suptitle("Boxplot of the iris plant data set to visualise differences")
+plt.show()
+
+# piechart - another method of visualising data
+colors = sns.choose_dark_palette
+plt.pie(iris, labels = "class", colors = "colors", autopct="%of%%")
 plt.show()
