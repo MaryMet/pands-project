@@ -78,6 +78,45 @@ plt.xlabel("Sepal Length" , color = "blue")
 plt.ylabel("Count", color = "blue")
 plt.show()
 
+# histogram for sepal width
+plt.figure(figsize = (10,7) )
+x = iris['sepalwidth']
+
+plt.hist(x, bins =20, color = "red")
+plt.title("Sepal Width", color = "red")
+plt.xlabel("sepalwidth", color ="red")
+plt.ylabel("Count", color = "red")
+plt.show()
+
+# histogram for petal length
+plt.figure(figsize = (10,7) )
+x = iris['petallength']
+
+plt.hist(x, bins =20, color = "green")
+plt.title("Petal Length", color = "green")
+plt.xlabel("Petallength", color ="green")
+plt.ylabel("Count", color = "green")
+plt.show()
+
+#histogram for petal width
+plt.figure(figsize = (10,7) )
+x = iris['petalwidth']
+
+plt.hist(x, bins =20, color = "yellow")
+plt.title("Petal Width", color = "yellow")
+plt.xlabel("Petalwidth", color ="yellow")
+plt.ylabel("Count", color = "yellow")
+plt.show()
+
+#comparing secies/classes using histogram
+
+setosa = iris[iris["class"] == "setosa"]["sepalwidth"]
+versicolor=iris[iris["class"] == "versicolor"]["sepalwidth"]
+virginica= iris[iris["class"] == "virginica"]["virginica"]
+
+plt.hist([setosa,versicolor,virginica])
+
+
 # box plot - displays how the data is distributed and any outliers
 # basic boxplot to visualise one or more groups of numerical data. It compares the distributions of the Sepal Length, Sepal Width, Petal Length and Petal Width
 
@@ -97,6 +136,11 @@ f.suptitle("Boxplot of the iris plant data set to visualise differences")
 plt.show()
 
 # piechart - another method of visualising data
-colors = sns.choose_dark_palette
-plt.pie(iris, labels = "class", colors = "colors", autopct="%of%%")
-plt.show()
+#colors = sns.choose_dark_palette
+#plt.pie(iris, labels = "class", colors = "colors", autopct="%of%%")
+#plt.show()
+
+iris["class"].value_counts().plot(kind="pie")
+
+plt.show
+
