@@ -94,6 +94,7 @@ THe class prompt named the flower variety/class and the number of data points co
 The head prompt prints out the first ten rows of the dataset. The first ten lines are data points collected from the Setosa class. This is how the data was compiled/listed.
 The tail prints out the last ten lines of the data set. This data belongs to class virginica - because of how the data was compliled/listed.
 The unique prompts is a different method of naming the variet/class and the data points collected for each.
+The null command lists any missing entries - there were none
 
 ### Scattergraphs ###
 
@@ -111,7 +112,11 @@ I found resources on youtube very helpful with my analysis above. An example of 
 
 ### Histogram ###
 
-Sepal length histogram - recieved assistance from website [geeksforgeeks](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)
+I completed histograms for several of the attributes separately. These were not separated into species therefore not very illustrative of the data.
+
+I used pairplot to complete my scattergraphs. It also histograms which not only demonstrated the different attributes but it also defined the species in each. The different colours made the species more distinct and therefore the histograms were easily read. Again the histograms illustrated that the measurements of spepal length and width made it very difficult to distinguish between the different species. One you look at histograms illustrating the petal length and width the species are more easily distinguishable. Setosa is set away from the other two. Virginica and Versicolour are intermingled in the middle measurements but can be distingusihed at the outer limits of the measurements - veriscolour in the measurements, virginica in the higher - referring to the x axis. 
+
+Histograms - I recieved assistance from website [geeksforgeeks](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/). I also used [kaggel](https://www.kaggle.com/code/kstaud85/iris-data-visualization)
 
 ### Boxplots ###
 

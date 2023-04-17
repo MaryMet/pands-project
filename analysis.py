@@ -22,6 +22,8 @@ print (iris.tail(10)) # print out the last ten rows of the dataset - contains da
 iris['class'].unique() # find out unique classification 
 print(iris.groupby('class').size()) # print out above the uniques classification of the iris flowers and the amount of each.
 
+print(iris.isnull().sum()) # check is the data has any missing values
+
 # printing out a number of mathematical principals - 
 print (iris.min()) # prints out the minimum measurement of the dataset
 print (iris.max()) # prints out the maximum measurement of the dataset
@@ -63,7 +65,7 @@ plt.show()
 
 plt.close()
 sns.set_style("whitegrid")
-sns.pairplot(iris, hue="class", height=3, diag_kind="kde")
+sns.pairplot(iris, hue="class", height=3, diag_kind="hist") # diag_kind - changed line graph to histograms
 plt.show()
 # petal width on the x ais and the other dimensions on the y axis seem to give best grouping/separtion thus being a tool for identification.
 
@@ -107,14 +109,6 @@ plt.title("Petal Width", color = "yellow")
 plt.xlabel("Petalwidth", color ="yellow")
 plt.ylabel("Count", color = "yellow")
 plt.show()
-
-#comparing secies/classes using histogram
-
-setosa = iris[iris["class"] == "setosa"]["sepalwidth"]
-versicolor=iris[iris["class"] == "versicolor"]["sepalwidth"]
-virginica= iris[iris["class"] == "virginica"]["virginica"]
-
-plt.hist([setosa,versicolor,virginica])
 
 
 # box plot - displays how the data is distributed and any outliers
