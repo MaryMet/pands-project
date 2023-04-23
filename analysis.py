@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 import numpy as np
+import sys
+
+sys.stdout = open ("project.txt", "w") # creating the text file to display the output
 
 iris =pd.read_csv("iris_csv.csv") # this uses the imported iris_cv dataset
 

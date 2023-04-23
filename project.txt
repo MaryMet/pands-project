@@ -1,0 +1,93 @@
+(150, 5)
+Index(['sepallength', 'sepalwidth', 'petallength', 'petalwidth', 'class'], dtype='object')
+Iris-setosa        50
+Iris-versicolor    50
+Iris-virginica     50
+Name: class, dtype: int64
+   sepallength  sepalwidth  petallength  petalwidth        class
+0          5.1         3.5          1.4         0.2  Iris-setosa
+1          4.9         3.0          1.4         0.2  Iris-setosa
+2          4.7         3.2          1.3         0.2  Iris-setosa
+3          4.6         3.1          1.5         0.2  Iris-setosa
+4          5.0         3.6          1.4         0.2  Iris-setosa
+5          5.4         3.9          1.7         0.4  Iris-setosa
+6          4.6         3.4          1.4         0.3  Iris-setosa
+7          5.0         3.4          1.5         0.2  Iris-setosa
+8          4.4         2.9          1.4         0.2  Iris-setosa
+9          4.9         3.1          1.5         0.1  Iris-setosa
+     sepallength  sepalwidth  petallength  petalwidth           class
+140          6.7         3.1          5.6         2.4  Iris-virginica
+141          6.9         3.1          5.1         2.3  Iris-virginica
+142          5.8         2.7          5.1         1.9  Iris-virginica
+143          6.8         3.2          5.9         2.3  Iris-virginica
+144          6.7         3.3          5.7         2.5  Iris-virginica
+145          6.7         3.0          5.2         2.3  Iris-virginica
+146          6.3         2.5          5.0         1.9  Iris-virginica
+147          6.5         3.0          5.2         2.0  Iris-virginica
+148          6.2         3.4          5.4         2.3  Iris-virginica
+149          5.9         3.0          5.1         1.8  Iris-virginica
+class
+Iris-setosa        50
+Iris-versicolor    50
+Iris-virginica     50
+dtype: int64
+sepallength    0
+sepalwidth     0
+petallength    0
+petalwidth     0
+class          0
+dtype: int64
+sepallength            4.3
+sepalwidth             2.0
+petallength            1.0
+petalwidth             0.1
+class          Iris-setosa
+dtype: object
+sepallength               7.9
+sepalwidth                4.4
+petallength               6.9
+petalwidth                2.5
+class          Iris-virginica
+dtype: object
+sepallength    5.843333
+sepalwidth     3.054000
+petallength    3.758667
+petalwidth     1.198667
+dtype: float64
+sepallength    5.80
+sepalwidth     3.00
+petallength    4.35
+petalwidth     1.30
+dtype: float64
+sepallength    0.828066
+sepalwidth     0.433594
+petallength    1.764420
+petalwidth     0.763161
+dtype: float64
+             count      mean       std  min  25%   50%  75%  max
+sepallength  150.0  5.843333  0.828066  4.3  5.1  5.80  6.4  7.9
+sepalwidth   150.0  3.054000  0.433594  2.0  2.8  3.00  3.3  4.4
+petallength  150.0  3.758667  1.764420  1.0  1.6  4.35  5.1  6.9
+petalwidth   150.0  1.198667  0.763161  0.1  0.3  1.30  1.8  2.5
+                sepallength                                             sepalwidth  ... petallength petalwidth                                          
+                      count   mean       std  min    25%  50%  75%  max      count  ...         max      count   mean       std  min  25%  50%  75%  max
+class                                                                               ...                                                                 
+Iris-setosa            50.0  5.006  0.352490  4.3  4.800  5.0  5.2  5.8       50.0  ...         1.9       50.0  0.244  0.107210  0.1  0.2  0.2  0.3  0.6
+Iris-versicolor        50.0  5.936  0.516171  4.9  5.600  5.9  6.3  7.0       50.0  ...         5.1       50.0  1.326  0.197753  1.0  1.2  1.3  1.5  1.8
+Iris-virginica         50.0  6.588  0.635880  4.9  6.225  6.5  6.9  7.9       50.0  ...         6.9       50.0  2.026  0.274650  1.4  1.8  2.0  2.3  2.5
+
+[3 rows x 32 columns]
+                             sepallength  sepalwidth  petallength  petalwidth
+class                                                                        
+Iris-setosa     sepallength     1.000000    0.746780     0.263874    0.279092
+                sepalwidth      0.746780    1.000000     0.176695    0.279973
+                petallength     0.263874    0.176695     1.000000    0.306308
+                petalwidth      0.279092    0.279973     0.306308    1.000000
+Iris-versicolor sepallength     1.000000    0.525911     0.754049    0.546461
+                sepalwidth      0.525911    1.000000     0.560522    0.663999
+                petallength     0.754049    0.560522     1.000000    0.786668
+                petalwidth      0.546461    0.663999     0.786668    1.000000
+Iris-virginica  sepallength     1.000000    0.457228     0.864225    0.281108
+                sepalwidth      0.457228    1.000000     0.401045    0.537728
+                petallength     0.864225    0.401045     1.000000    0.322108
+                petalwidth      0.281108    0.537728     0.322108    1.000000
