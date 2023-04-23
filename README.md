@@ -49,6 +49,10 @@ Data Visualisation - The data set can be visualised using histograms, scatter gr
 
 ## Technology Used ##
 
+### Python ###
+
+Python is a high level programming language. It was developed by Guido van Rossum in 1991. It has many applications including : web development, software development, maths and system scripting. Python can work on many different platforms and has a simple syntax simialr to english. It is popular because of its readability. It allows its users to develop programs that have fewers lines that other programs such as C. Code can be executed quickly as it runs on an interpreter system. Python has many inbuilt libraries to assist the user. Examples of the libraries I will be using in this project are :
+
 ### Matplotlib ###
 
 Matplotlib is a tool for use in python programming. It is a library used to create visualisations of data in python.
@@ -105,7 +109,8 @@ My initial scatterplot - all points were blue in colour. There was no distinguis
 using the seaborn library I was able to give each specied a specific colour or hue. 
 My first graph using seaborn had sepalwidth on y axis and sepallength on y axis. i also added a legend - class setosa is blue, veriscolor is orange and virginica is green. On this graph the blue points (setosa) was clustered together and orange (versicolour) and green (virginica) were mixed up. This clearly shows that setosa is easily identifying . Veriscolour and virginica are indistinguishable from each other when those two dimensions are being compared. ( There was one blue spot separated form the cluster)
 
-I than plotted more scattergraphs, (using pairplot), using different dimensions on the axes and comapring all to see if I could get a graph where versicolour and virginica are are more distingusihable from each other. This produced a matrix of scattergraphs and line graphs. The legend was the same as above. On all graphs setosa was clustered together - easily identifiable/classified. I found the graph that had petal width on the x axis and petal length on the y showed the separation of the classes and there was only a small amount of overlap. Setosa was completely separated. So if I picked an iris flower and measured the petal width and pletal width I would have nearly 100 confidence that if I identified it as a setosa based on this graph - i would be correct. I would be more confident with the other two but there is still a level of unsurity.
+I than plotted more scattergraphs, (using pairplot), using different dimensions on the axes and comapring all to see if I could get a graph where versicolour and virginica are are more distingusihable from each other. This produced a matrix of scattergraphs and histograms. The legend was the same as above. On all graphs setosa was clustered together - easily identifiable/classified. I found the graph that had petal width on the x axis and petal length on the y showed the separation of the classes and there was only a small amount of overlap. Setosa was completely separated. So if I picked an iris flower and measured the petal width and pletal width I would have nearly 100 confidence that if I identified it as a setosa based on this graph - i would be correct. I would be more confident with the other two but there is still a level of unsurity.
+The average petal length for Stosa is much smaller than the other two varieties. The Virginica has the largest measurements in petal lengths and there is overlaps with the last variety -versicolor.
 The line graph clearly shows the overlap and length of dimensions where there would be an unsurity. Measurements above and below this area of overlap would be clear as to the class of the flower.
 
 I found resources on youtube very helpful with my analysis above. An example of this is [Iris Dataset EDA leactur 1 and 2](https://youtu.be/FLuqwQgSBDw)
@@ -128,4 +133,24 @@ I used [geekforgeeks](https://www.geeksforgeeks.org/box-plot-and-histogram-explo
 ### Piechart ###
 
 I decided to do a simple pie chart representation of the data - just to have practice with this aspect of data visualisation
+
+## Summary ##
+
+The Iris data set is easily imported and is a very useful tool to demonstrate how python can be used to vsualise data.  Data analysis is the process of examining a data set and summarising the main characteristics of the set. It is beginner friendly and there are many only resources to explain the history of the dataset, what the dataset represents and how to use inbuilt libraries in Python to vsiualise the data in the set. The data set is easily understood and the species/classification is easily visualised.
+In doing this project I gained experience in using Python's inbuilt libraries - Pandas, Matplotlib and Seaborn. 
+Initally I used pandas to explore the dataset and to show the data it contains in various different ways.
+I then used Marplotlib and Seaborn to create graphs/plots to easily vsiualise the data. I produced various histograms, scatterplots and boxplots. I made an attempt to creat a piechart.
+My first plots were basic in nature and it was difficult to distinguish between the 3 different flowers or the attributes of the flowers.
+I then used differnt colour schemes and labelling to make the data clearer and to distuguish between the varieties and their attributes. The latter visualisations clearly shows how visualising the data in terms of plots can help the user to distinguish between the varieties of the flowers and where mistakes could be made in the identification , it where the data could indication both versicolour and visrginica. Setosa is easily identifies from looking at the plots. There are overlaps in the data of the other two which indicates that mistakes can be made if the measurements falls with the overlapping areas.
+The visualisations highlight both the similarities and the differences between the species.
+In conclusion the setosa variety is clearly distinguishable from the other two varieties. Versicolour and Virginica can be indeistuishable from each other exept at the the extremes of their attribute measurements - verginica at the upper limits of the data and versicolour at the lower.
+The Iris dataset clearly demonstarates the linear discriminant - it shows a linear combination of features that characterises or separates two or more classes of objects.
+
+
+
+
+
+
+
+
 

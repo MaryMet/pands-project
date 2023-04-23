@@ -129,12 +129,18 @@ sns.boxplot(x="class", y="sepalwidth", data=iris, ax= axes[1,1]) # uses seaborn.
 f.suptitle("Boxplot of the iris plant data set to visualise differences")
 plt.show()
 
+print(iris.groupby("class").describe())
+print(iris.groupby("class").corr())
+
 # piechart - another method of visualising data
 #colors = sns.choose_dark_palette
-#plt.pie(iris, labels = "class", colors = "colors", autopct="%of%%")
+#labels=["Iris-setosa, Iris-versicolor, Iris-virginica"]
+#explode=(0,0,0.1)
+#plt.pie(iris["class"].value_counts(),labels=labels,explode=explode, colors = "colors", autopct="%1.1f%%")
+#plt.title("Distribution")
 #plt.show()
 
-iris["class"].value_counts().plot(kind="pie")
+#iris["class"].value_counts().plot(kind="pie")
 
-plt.show
+#plt.show
 
