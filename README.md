@@ -100,6 +100,13 @@ The tail prints out the last ten lines of the data set. This data belongs to cla
 The unique prompts is a different method of naming the variet/class and the data points collected for each.
 The null command lists any missing entries - there were none
 
+The describe command creates a table conatining descriptive statistics of the data. From this we can see that the Iris virginica has the longest average sepal length. iris setosa has the shortest average sepal length 4.3.
+
+Correlation is a statistical method that expresses the relationship between variables. The corelation coefficient ranges from -1 to +1. The closer to 0 the weaker the linear relationship. Positive values indicate a positive corelation - the values of the valiable increase together. Negative values - when one variable's value increase the other decreases. Looking at the corelation table of the Iris dataset we can deduce: Iris setosa : sepal length and sepal width are highly co-related - the longer the seapl, the wider it is. In versicolor -petal length and petal width are the most corelated variable. The longer the petal the wider it is. In virginica - the strongest correlation is between petal length and sepal length - 0.864225.
+
+[staistics](https://www.jmp.com/en_ca/statistics-knowledge-portal/what-is-correlation.html#:~:text=Correlation%20is%20a%20statistical%20measure,together%20at%20a%20constant%20rate)
+
+
 ### Scattergraphs ###
 
 I created a number of scatterplots from the basic to  more complex. I used different libararies (matplotlib and seaborn) to give resources for my graphs.

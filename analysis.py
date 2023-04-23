@@ -33,9 +33,13 @@ print (iris.std()) # prints of the standard deviation
 
 # creating a table which illustates the above mathematical principals above in the form of a table
 
-summary = iris.describe()
+summary = iris.describe() 
 summary = summary.transpose()
 print (summary.head ())
+
+print(iris.groupby("class").describe()) # another method of grouping the data - showing the statistics and measurements
+print(iris.groupby("class").corr()) # correlation of the data set which determines whether a linear relationship between variables exists.
+
 
 # basic scatter plot
 iris.plot(kind = "scatter", x = "sepallength", y = "petallength", color = "red") # visualising some of the data in a scattergraph
@@ -129,8 +133,6 @@ sns.boxplot(x="class", y="sepalwidth", data=iris, ax= axes[1,1]) # uses seaborn.
 f.suptitle("Boxplot of the iris plant data set to visualise differences")
 plt.show()
 
-print(iris.groupby("class").describe())
-print(iris.groupby("class").corr())
 
 # piechart - another method of visualising data
 #colors = sns.choose_dark_palette
