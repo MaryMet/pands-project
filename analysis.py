@@ -134,6 +134,8 @@ f.suptitle("Boxplot of the iris plant data set to visualise differences")
 plt.show()
 
 
+
+
 # piechart - another method of visualising data
 #colors = sns.choose_dark_palette
 #labels=["Iris-setosa, Iris-versicolor, Iris-virginica"]
