@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 import sys
 
-sys.stdout = open ("project.txt", "w") # creating the text file to display the output
+#sys.stdout = open ("project.txt", "w") # creating the text file to display the output
 
 iris =pd.read_csv("iris_csv.csv") # this uses the imported iris_cv dataset
 
@@ -49,11 +49,13 @@ iris.plot(kind = "scatter", x = "sepallength", y = "petallength", color = "red")
 
 plt.title ("sepal vs petal", color = "green")  # title of the scattergraph
 plt.show
+plt.savefig("images/basic scatterplot")
 
 # another scatter plot - sepal length and sepal width
 
 iris.plot(kind="scatter", x = "sepallength", y =  "sepalwidth")
 plt.show()
+plt.savefig("images/sepallength vs sepalwidth")
 # no discrimination between species. Visualisation is not clear.
 
 
@@ -63,6 +65,7 @@ sns.FacetGrid(iris, hue="class", height=4) \
     .map(plt.scatter, "sepallength", "sepalwidth") \
     .add_legend()
 plt.show()
+plt.savefig("images/Scatterplot with species distinguished")
 # the species are distingushed by colour and the differences easily seen by using seaborn and compared to the scatter graph above.
 # blue, class setosa, is separated from the other two - versicolour -orange and virginica. This can be used to identify/clasify setosa easily but not the other two.
 # one setosa could be misclassified because of where it is situated on this graph.
@@ -74,6 +77,7 @@ plt.close()
 sns.set_style("whitegrid")
 sns.pairplot(iris, hue="class", height=3, diag_kind="hist") # diag_kind - changed line graph to histograms
 plt.show()
+plt.savefig("images/Variety of histograms and scatterplots comparing the different attributes measured")
 # petal width on the x ais and the other dimensions on the y axis seem to give best grouping/separtion thus being a tool for identification.
 
 # histogram to show sepal length
@@ -86,6 +90,7 @@ plt.title(" Sepal Length in cm", color = "blue")
 plt.xlabel("Sepal Length" , color = "blue")
 plt.ylabel("Count", color = "blue")
 plt.show()
+plt.savefig("images/Histogram visualising sepallength")
 
 # histogram for sepal width
 plt.figure(figsize = (10,7) )
@@ -96,6 +101,7 @@ plt.title("Sepal Width", color = "red")
 plt.xlabel("sepalwidth", color ="red")
 plt.ylabel("Count", color = "red")
 plt.show()
+plt.savefig("images/Histogram visualising spepalwidth")
 
 # histogram for petal length
 plt.figure(figsize = (10,7) )
@@ -106,6 +112,7 @@ plt.title("Petal Length", color = "green")
 plt.xlabel("Petallength", color ="green")
 plt.ylabel("Count", color = "green")
 plt.show()
+plt.savefig("images/Histogram for petallength")
 
 #histogram for petal width
 plt.figure(figsize = (10,7) )
@@ -116,14 +123,16 @@ plt.title("Petal Width", color = "yellow")
 plt.xlabel("Petalwidth", color ="yellow")
 plt.ylabel("Count", color = "yellow")
 plt.show()
+plt.savefig("images/Histogram of Petalwidth")
 
 
 # box plot - displays how the data is distributed and any outliers
 # basic boxplot to visualise one or more groups of numerical data. It compares the distributions of the Sepal Length, Sepal Width, Petal Length and Petal Width
 
-plt.figure(figsize = (10, 7)) # basic boxplot which compares the differnet attributes in the dataset
+plt.figure(figsize = (10, 7)) # basic boxplot which compares the different attributes in the dataset
 iris.boxplot() # there is no clear distinction between species
 plt.show()
+plt.savefig("images/Basic boxplot showing different attributes")
 
 #More boxplots to visualise the data - 4 box blots according to different data sets to visualise differences between species
 
@@ -135,7 +144,7 @@ sns.boxplot(x="class", y="petalwidth" ,data=iris, ax= axes[1,0]) # uses seaborn.
 sns.boxplot(x="class", y="sepalwidth", data=iris, ax= axes[1,1]) # uses seaborn. x axis is the class/species. y axis is the sepal width
 f.suptitle("Boxplot of the iris plant data set to visualise differences")
 plt.show()
-
+plt.savefig("images/Boxplots differentiating between classes and different attributes") #wont save for some reason
 
 
 
@@ -150,4 +159,5 @@ plt.show()
 #iris["class"].value_counts().plot(kind="pie")
 
 #plt.show
-
+#
+#plt.savefig("Pie chart practice with percentages")
