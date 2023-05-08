@@ -192,3 +192,11 @@ plt.show()
 # plt.show
 #
 #plt.savefig("Pie chart practice with percentages")
+
+
+# pie chart showing the frequency of the three classes in the data set
+ax=plt.subplots(1,1,figsize=(10,8))
+iris['class'].value_counts().plot.pie(explode=[0.1,0.1,0.1],autopct='%1.1f%%',shadow=True,figsize=(10,8))
+plt.title("Iris class %")
+plt.savefig("pie chart with percentages.png")
+plt.show()
