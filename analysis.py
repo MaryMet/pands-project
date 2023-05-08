@@ -60,7 +60,10 @@ print(summary.head())
 # another method of grouping the data - showing the statistics and measurements
 print(iris.groupby("class").describe())
 # correlation of the data set which determines whether a linear relationship between variables exists.
-print(iris.groupby("class").corr())
+print(iris.groupby("class").corr())#
+#plt.figure(figsize=(20,8)) trying to do out a heat map illustrating the co relation
+#sns.heatmap(corr, cmap = "plasma" ,annot=True)
+#plt.show
 
 
 # basic scatter plot
@@ -178,6 +181,12 @@ f.suptitle("Boxplot of the iris plant data set to visualise differences")
 plt.savefig("images/boxplotsSpecies.png")
 plt.show()
 
+# pie chart showing the frequency of the three classes in the data set
+ax=plt.subplots(1,1,figsize=(10,8))
+iris['class'].value_counts().plot.pie(explode=[0.1,0.1,0.1],autopct='%1.1f%%',shadow=True,figsize=(10,8))
+plt.title("Iris class %")
+plt.savefig("pie chart with percentages.png")
+plt.show()
 
 # piechart - another method of visualising data
 #colors = sns.choose_dark_palette
@@ -194,9 +203,7 @@ plt.show()
 #plt.savefig("Pie chart practice with percentages")
 
 
-# pie chart showing the frequency of the three classes in the data set
-ax=plt.subplots(1,1,figsize=(10,8))
-iris['class'].value_counts().plot.pie(explode=[0.1,0.1,0.1],autopct='%1.1f%%',shadow=True,figsize=(10,8))
-plt.title("Iris class %")
-plt.savefig("pie chart with percentages.png")
-plt.show()
+
+
+
+

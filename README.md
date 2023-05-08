@@ -141,6 +141,8 @@ I used [geekforgeeks](https://www.geeksforgeeks.org/box-plot-and-histogram-explo
 
 I decided to do a simple pie chart representation of the data - just to have practice with this aspect of data visualisation
 
+Reference [w3resource](https://www.w3resource.com/machine-learning/scikit-learn/iris/python-machine-learning-scikit-learn-iris-visualization-exercise-3.php)
+
 ## Summary ##
 
 The Iris data set is easily imported and is a very useful tool to demonstrate how python can be used to vsualise data.  Data analysis is the process of examining a data set and summarising the main characteristics of the set. It is beginner friendly and there are many only resources to explain the history of the dataset, what the dataset represents and how to use inbuilt libraries in Python to vsiualise the data in the set. The data set is easily understood and the species/classification is easily visualised.
